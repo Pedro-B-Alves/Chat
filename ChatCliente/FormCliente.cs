@@ -31,7 +31,7 @@ namespace ChatCliente
 
         private void btnConectar_Click(object sender, System.EventArgs e)
         {
-            // se não esta conectando aguarda a conexão
+            // Se não esta conectando aguarda a conexão
             if (Conectado == false)
             {
                 // Inicializa a conexão
@@ -52,7 +52,7 @@ namespace ChatCliente
                 tcpServidor = new TcpClient();
                 tcpServidor.Connect(enderecoIP, 2502);
 
-                // AJuda a verificar se estamos conectados ou não
+                // Ajuda a verificar se estamos conectados ou não
                 Conectado = true;
 
                 // Prepara o formulário
@@ -82,7 +82,7 @@ namespace ChatCliente
 
         private void RecebeMensagens()
         {
-            // recebe a resposta do servidor
+            // Recebe a resposta do servidor
             strReceptor = new StreamReader(tcpServidor.GetStream());
             string ConResposta = strReceptor.ReadLine();
             // Se o primeiro caractere da resposta é 1 a conexão foi feita com sucesso
@@ -105,7 +105,7 @@ namespace ChatCliente
             // Enquanto estiver conectado le as linhas que estão chegando do servidor
             while (Conectado)
             {
-                // exibe mensagens no Textbox
+                // Exibe mensagens no Textbox
                 this.Invoke(new AtualizaLogCallBack(this.AtualizaLog), new object[] { strReceptor.ReadLine() });
             }
         }
@@ -134,7 +134,7 @@ namespace ChatCliente
         private void EnviaMensagem()
         {
             if (txtMensagem.Lines.Length >= 1)
-            { //escreve a mensagem da caixa de texto
+            { // Escreve a mensagem da caixa de texto
                 stwEnviador.WriteLine(txtMensagem.Text);
                 stwEnviador.Flush();
                 txtMensagem.Lines = null;
