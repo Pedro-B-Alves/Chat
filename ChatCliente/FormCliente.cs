@@ -50,7 +50,7 @@ namespace ChatCliente
                 enderecoIP = IPAddress.Parse(txtServidorIP.Text);
                 // Inicia uma nova conexão TCP com o servidor chat
                 tcpServidor = new TcpClient();
-                tcpServidor.Connect(enderecoIP, 2502);
+                tcpServidor.Connect(enderecoIP, 8080);
 
                 // Ajuda a verificar se estamos conectados ou não
                 Conectado = true;

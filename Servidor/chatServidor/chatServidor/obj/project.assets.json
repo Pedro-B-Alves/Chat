@@ -8,20 +8,28 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\lipes\\.nuget\\packages\\": {}
+    "C:\\Users\\pedro\\.nuget\\packages\\": {},
+    "P:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lipes\\OneDrive\\Documents\\Projetoss\\Chat\\Servidor\\chatServidor\\chatServidor\\chatServidor.csproj",
+      "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\5semestre\\APS\\Chat\\Servidor\\chatServidor\\chatServidor\\chatServidor.csproj",
       "projectName": "chatServidor",
-      "projectPath": "C:\\Users\\lipes\\OneDrive\\Documents\\Projetoss\\Chat\\Servidor\\chatServidor\\chatServidor\\chatServidor.csproj",
-      "packagesPath": "C:\\Users\\lipes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lipes\\OneDrive\\Documents\\Projetoss\\Chat\\Servidor\\chatServidor\\chatServidor\\obj\\",
+      "projectPath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\5semestre\\APS\\Chat\\Servidor\\chatServidor\\chatServidor\\chatServidor.csproj",
+      "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\5semestre\\APS\\Chat\\Servidor\\chatServidor\\chatServidor\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "P:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\lipes\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows7.0"
@@ -55,15 +63,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "frameworkReferences": {
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          },
-          "Microsoft.WindowsDesktop.App.WindowsForms": {
-            "privateAssets": "none"
-          }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }
